@@ -5,6 +5,7 @@
 * Fork this Repository
 * Clone YOUR fork
 * Complete the activity below
+* Commit frequently (about every 15 minutes)
 * Push your solution to your fork
 * Submit a pull request from your repository to the turingschool-examples repository
   * Make sure to put your name in your PR!
