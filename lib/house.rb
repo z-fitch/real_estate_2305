@@ -18,4 +18,29 @@ class House
     rooms << room
     end
 
+    def above_market_average?
+        if price < 500000
+            false
+        else
+            true
+        end
+    end
+
+    def rooms_from_category(category)
+        rooms.select {|room| room.category == category}
+    end
+
+    def area 
+        areas = 0
+        rooms_area = rooms.map do |room|
+            room_width = room.width.to_i
+            room_area = room.length * room_width 
+        end
+        rooms_area.sum
+    end
+
+    # def details
+    #     detail = Hash.new(@house)
+
+    # end
 end
